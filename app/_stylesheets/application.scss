@@ -1,8 +1,12 @@
+// global styles for <a> and <p> tags
 $govuk-global-styles: true;
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
 
 @import "govuk/all.scss";
 @import "_components/all.scss";
 @import "vendor/prism.scss";
+
 
 @media print {
   // Force a white background when printing a page

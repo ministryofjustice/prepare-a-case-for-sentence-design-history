@@ -2,4 +2,6 @@
 
 set -euo pipefail
 
-node ./node_modules/http-server/bin/http-server -p 3000
+# node ./node_modules/gulp/bin/gulp generate-assets && node listen-on-port.js
+
+npm run serve

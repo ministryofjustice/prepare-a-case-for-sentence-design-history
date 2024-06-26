@@ -11,6 +11,7 @@ on:
 
 env:
   KUBE_NAMESPACE: ${{ secrets.KUBE_NAMESPACE }} # used in kubernetes-deploy.yaml too
+  PROTOTYPE_NAME: ${{ secrets.PROTOTYPE_NAME }}
 
 jobs:
   main:
@@ -19,17 +20,17 @@ jobs:
       id-token: write
       contents: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: aws-actions/configure-aws-credentials@v4
+      - uses: actions/checkout@v3
+      - uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: ${{ secrets.ECR_ROLE_TO_ASSUME }}
           aws-region: ${{ vars.ECR_REGION }}
-      - uses: aws-actions/amazon-ecr-login@v2
+      - uses: aws-actions/amazon-ecr-login@v1
         id: login-ecr
       - run: |
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
           docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
-          cat kubernetes-deploy-${{ github.ref_name }}.tpl | envsubst > kubernetes-deploy.yaml
+          cat kubernetes-deploy.tpl | envsubst > kubernetes-deploy.yaml
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           REPOSITORY: ${{ vars.ECR_REPOSITORY }}

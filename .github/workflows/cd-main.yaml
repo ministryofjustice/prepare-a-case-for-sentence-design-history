@@ -11,7 +11,7 @@ on:
 
 env:
   KUBE_NAMESPACE: ${{ secrets.KUBE_NAMESPACE }} # used in kubernetes-deploy.yaml too
-  PROTOTYPE_NAME: prepare-a-case-for-sentence-design-history
+  PROTOTYPE_NAME: pacfs-design-history
 
 jobs:
   main:

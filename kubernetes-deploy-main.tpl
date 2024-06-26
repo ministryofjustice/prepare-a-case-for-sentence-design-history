@@ -1,68 +1,58 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: moj-prototype-${BRANCH}
+  name: manage-a-workforce-design-history
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: prototype-${BRANCH}
+      app: manage-a-workforce-design-history
   template:
     metadata:
       labels:
-        app: prototype-${BRANCH}
+        app: manage-a-workforce-design-history
     spec:
       containers:
-      - name: prototype
+      - name: nginx
         image: ${REGISTRY}/${REPOSITORY}:${IMAGE_TAG}
-        env:
-          - name: USERNAME
-            valueFrom:
-              secretKeyRef:
-                name: basic-auth
-                key: username
-          - name: PASSWORD
-            valueFrom:
-              secretKeyRef:
-                name: basic-auth
-                key: password
         ports:
         - containerPort: 3000
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: prototype-service-${BRANCH}
+  name: design-history-nginx-service
   labels:
-    app: prototype-service-${BRANCH}
+    app: design-history-nginx-service
 spec:
   ports:
   - port: 3000
     name: http
     targetPort: 3000
   selector:
-    app: prototype-${BRANCH}
+    app: manage-a-workforce-design-history
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: prototype-ingress-${BRANCH}
+  name: design-history-ingress
   annotations:
-    external-dns.alpha.kubernetes.io/set-identifier: prototype-ingress-${BRANCH}-${KUBE_NAMESPACE}-green
+    kubernetes.io/ingress.class: nginx
+    external-dns.alpha.kubernetes.io/set-identifier: design-history-ingress-${KUBE_NAMESPACE}-green
     external-dns.alpha.kubernetes.io/aws-weight: "100"
 spec:
-  ingressClassName: default
+  ingressClassName: "default"
   tls:
   - hosts:
-    - ${KUBE_NAMESPACE}-${BRANCH}.apps.live.cloud-platform.service.justice.gov.uk
+    - ${PROTOTYPE_NAME}.apps.live.cloud-platform.service.justice.gov.uk
   rules:
-  - host: ${KUBE_NAMESPACE}-${BRANCH}.apps.live.cloud-platform.service.justice.gov.uk
+  - host: ${PROTOTYPE_NAME}.apps.live.cloud-platform.service.justice.gov.uk
     http:
       paths:
       - path: /
         pathType: ImplementationSpecific
         backend:
           service:
-            name: prototype-service-${BRANCH}
+            name: design-history-nginx-service
             port:
               number: 3000

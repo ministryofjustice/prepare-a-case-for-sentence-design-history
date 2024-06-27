@@ -15,12 +15,17 @@ eleventyComputed:
 related:
   items:
     - text: Prototype
-      href: https://manage-a-workforce-main.apps.live.cloud-platform.service.justice.gov.uk/
+      href: https://hmpps-prepare-a-case-prototype-main.apps.live.cloud-platform.service.justice.gov.uk/index
       description: |
-        Username: `manage`
-        Password: `workforce`
-    - text: Prototype repository
-      href: https://github.com/ministryofjustice/manage-a-workforce
+        Username: `hmpps-prepare-a-case-prototype`
+        Password: `sdFKrHn8BxhdoeHN`
+        Repo: [Github](https://github.com/ministryofjustice/hmpps-prepare-a-case-prototype)
     - text: Design history repository
-      href: https://github.com/ministryofjustice/manage-a-workforce-design-history
+      href: https://github.com/ministryofjustice/prepare-a-case-for-sentence-design-history
+    - text: Verification and pre-sentence report service prototype
+      href: https://pre-sentence-service-prototype-main.apps.live.cloud-platform.service.justice.gov.uk/
+      description: |
+        Username: `probation-in-court`
+        Password: `FALLIBLE-ness-apace`
+        Repo: [Github](https://github.com/ministryofjustice/pre-sentence-service-prototype)
 ---

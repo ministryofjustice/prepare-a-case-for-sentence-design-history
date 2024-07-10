@@ -64,4 +64,4 @@ This featured will be added to PAC as an enhancement, we will keep track of usag
 
 Participants told us one of the reasons they value seeing cases in the past is because they assume the case result will be visible.
 
-This isn’t currently happening, so the perceived benefit is lower. We have a piece of work on the backlog to display results in cases in the past which will increase the value of the past case navigation.
+This isn't currently happening, so the perceived benefit is lower. We have a piece of work on the backlog to display results in cases in the past which will increase the value of the past case navigation.

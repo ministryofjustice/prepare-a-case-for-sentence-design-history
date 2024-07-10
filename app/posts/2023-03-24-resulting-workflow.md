@@ -61,7 +61,7 @@ The outcomes page displays all cases that are unallocated to an admin on the fir
 
 Court admins told us that they would like to see the person who has picked up a case for resulting. This would be useful if that person is absent for any reason and their cases need to be easily identified and redistributed to other admins.
 
-It was not clear to people what the ‘status’ column referred to, some people thought it was the status of the case itself - so complete meant it had been closed. We changed the column heading to Resulting status to help with this.
+It was not clear to people what the 'status' column referred to, some people thought it was the status of the case itself - so complete meant it had been closed. We changed the column heading to Resulting status to help with this.
 
 #### Design crit
 
@@ -70,7 +70,7 @@ It was not clear to people what the ‘status’ column referred to, some people
 We held a design crit on 18 January 2023. The main things that came out of it to change were:
 - The drop down on the end of each table row was confusing because it fulfilled 2 interactions - changing the status and assigning a task to yourself
 - There were too many columns in the table
-- To follow the people-first ethos of HMPPS Digital, we should have the defendant’s name as the 1st column in the table rather than their outcome.
+- To follow the people-first ethos of HMPPS Digital, we should have the defendant's name as the 1st column in the table rather than their outcome.
 
 Instead of the drop-down status change and allocate on the end of each row, we changed it to a button that you would press to select a case for allocating. Pressing the button moves the case to a new in progress queue and allocates it to you.
 
@@ -90,10 +90,10 @@ Instead of the drop-down status change and allocate on the end of each row, we c
   }
 }) }}
 
-We also reprioritised the data in the table. Instead of showing all of it all the time, we agreed on the data that’s needed to complete the task, and data that helps make other kinds of decisions, or secondary journeys.
+We also reprioritised the data in the table. Instead of showing all of it all the time, we agreed on the data that's needed to complete the task, and data that helps make other kinds of decisions, or secondary journeys.
 
 
-We moved the admin’s name into a filter instead of having it in the table. Whilst users told us they would need to know who is working on a case in the event they are on holiday and haven’t completed the resulting, or to see how much work people have allocated to them, they don’t need this information all the time. Having it in a filter means they can interrogate the data in the way that they need to for infrequent use cases, but it’s not cluttering the table all the time when they don’t need it to result a case.
+We moved the admin's name into a filter instead of having it in the table. Whilst users told us they would need to know who is working on a case in the event they are on holiday and haven't completed the resulting, or to see how much work people have allocated to them, they don't need this information all the time. Having it in a filter means they can interrogate the data in the way that they need to for infrequent use cases, but it's not cluttering the table all the time when they don't need it to result a case.
 
 #### Accessibility consultancy
 
@@ -127,7 +127,7 @@ The next highest priority are cases that have been adjourned for one of three re
 - Adjourned for warrant - they could come in at any time
 - Committed to Crown
 
-Finally there are outcomes that do not involve probation, fines, exclusion orders etc. Admin may add a note to NDelius but most won’t have time.
+Finally there are outcomes that do not involve probation, fines, exclusion orders etc. Admin may add a note to NDelius but most won't have time.
 
 {% from "figure/macro.njk" import appFigure with context %}
 {{ appFigure({
@@ -137,7 +137,7 @@ Finally there are outcomes that do not involve probation, fines, exclusion order
   }
 }) }}
 
-Some PCIMS courts will combine statuses, for example current defendant and report requested. Our design doesn’t currently allow for this, should we?
+Some PCIMS courts will combine statuses, for example current defendant and report requested. Our design doesn't currently allow for this, should we?
 
 Another thing to consider is whether the final status probation not involved is needed or if a Court Duty Officer would just not allocate this outcome for resulting.
 
@@ -157,10 +157,10 @@ Final categories which tested well in iteration 3:
 
 ## Additional user journeys and needs - error recovery
 
-Demoing the designs to the team resulted in some additional journeys that we hadn’t fully considered or included in the scope.
+Demoing the designs to the team resulted in some additional journeys that we hadn't fully considered or included in the scope.
 
-1. An error recovery journey for people who accidentally mark a case as done when it’s not,
-2. A way to take a case from another admin if they have not completed it and it’s approaching the deadline.
+1. An error recovery journey for people who accidentally mark a case as done when it's not,
+2. A way to take a case from another admin if they have not completed it and it's approaching the deadline.
 
 The result of this was a series of banners with information about the status of the case and a way to either move it forward in the workflow process, or backwards.
 
@@ -195,9 +195,9 @@ Selecting the text links in the banners will move the case into the following di
 - From from in progress to to do
 - From done to to do
 - From done to in progress
-- Someone else’s case from in progress to to do
-- Someone else’s case from in progress to done
-- Someone else’s case from done to to do
+- Someone else's case from in progress to to do
+- Someone else's case from in progress to done
+- Someone else's case from done to to do
 
 {% from "figure/macro.njk" import appFigure with context %}
 {{ appFigure({
@@ -210,13 +210,13 @@ Selecting the text links in the banners will move the case into the following di
 ## Iteration 3: reducing complexity
 
 Further demos with the team surfaced some issues with the design in iteration 2:
-- Having 2 CTAs in a banner doesn’t allow for a hierarchy of actions - which is the primary?
+- Having 2 CTAs in a banner doesn't allow for a hierarchy of actions - which is the primary?
 - Using the banner for different purposes throughout the service
 - Moving a case back/forwards is too complex
-- The CTAs perform differently depending on where they are in the service - it’s confusing
+- The CTAs perform differently depending on where they are in the service - it's confusing
 - There are 2 ways into cases, 1 is preferred over the other
 
-It would also be quite difficult and time consuming to build what we had designed. Having a case be in different ‘states’ depending on where it’s been accessed from will need a lot of different business rules. We needed to prioritise the journeys in this workflow and make the primary route through it as simple and frictionless as possible. We also needed to make use of existing components in the UI so that the development overhead is smaller, and the UI is easier and more instinctive to use for court users.
+It would also be quite difficult and time consuming to build what we had designed. Having a case be in different 'states' depending on where it's been accessed from will need a lot of different business rules. We needed to prioritise the journeys in this workflow and make the primary route through it as simple and frictionless as possible. We also needed to make use of existing components in the UI so that the development overhead is smaller, and the UI is easier and more instinctive to use for court users.
 
 We tried again, with the following in mind:
 - Make the interactions familiar
@@ -234,7 +234,7 @@ We tried again, with the following in mind:
 
 ## Iteration 3 vs 4
 
-The accessibility team advised making the banner solid green so that it’s easier to see for visually impaired people (than the green outline banner we originally had).
+The accessibility team advised making the banner solid green so that it's easier to see for visually impaired people (than the green outline banner we originally had).
 
 We added the banner telling you what has happened to the case in response to people being unclear where a case had gone when they had interacted with it (moving from tab to tab).
 
@@ -256,7 +256,7 @@ We added the banner telling you what has happened to the case in response to peo
   }
 }) }}
 
-It wasn’t clear to participants that saying ‘yes I will result’ would also assign that case to them. We made this clearer by changing the button and link text to be explicit about the act of assigning.
+It wasn't clear to participants that saying 'yes I will result' would also assign that case to them. We made this clearer by changing the button and link text to be explicit about the act of assigning.
 
 {% from "figure/macro.njk" import appFigure with context %}
 {{ appFigure({
@@ -266,7 +266,7 @@ It wasn’t clear to participants that saying ‘yes I will result’ would also
   }
 }) }}
 
-To pick up a case that someone else is working on, initially we designed an interaction that made them move it back to the unallocated pile (the cases to result tab). This would mean that anyone could pick it up and result it. This proved to be an unlikely use-case (users are more likely to pick up someone else’s case to result themselves) as well as an unwieldy user journey, so we changed the interaction. To pick up someone else’s case you assign it to yourself.
+To pick up a case that someone else is working on, initially we designed an interaction that made them move it back to the unallocated pile (the cases to result tab). This would mean that anyone could pick it up and result it. This proved to be an unlikely use-case (users are more likely to pick up someone else's case to result themselves) as well as an unwieldy user journey, so we changed the interaction. To pick up someone else's case you assign it to yourself.
 
 {% from "figure/macro.njk" import appFigure with context %}
 {{ appFigure({
@@ -294,7 +294,7 @@ To pick up a case that someone else is working on, initially we designed an inte
   }
 }) }}
 
-Research participants thought the tabs referred to a case’s progression through the judiciary ‘that (completed) case, the hearing is over.’ We changed it to Resulted cases to make it clearer what had been done to the cases in that tab.
+Research participants thought the tabs referred to a case's progression through the judiciary 'that (completed) case, the hearing is over.' We changed it to Resulted cases to make it clearer what had been done to the cases in that tab.
 
 {% from "figure/macro.njk" import appFigure with context %}
 {{ appFigure({
@@ -354,7 +354,7 @@ Research participants told us that they would struggle to prioritise some of the
   }
 }) }}
 
-You’ll also notice the button text has changed between the versions from Mark as done to Move to resulted. It was felt that this was a clearer indication of what selecting that button would do - especially after 1 research participant mistakenly thought the first version meant someone called Mark had completed the case.
+You'll also notice the button text has changed between the versions from Mark as done to Move to resulted. It was felt that this was a clearer indication of what selecting that button would do - especially after 1 research participant mistakenly thought the first version meant someone called Mark had completed the case.
 
 ### The court journey officer journey
 
@@ -383,4 +383,4 @@ After MVP, we would recommend that Admin is notified through the system when an 
 
 ## The future of workflow
 
-An important thing about this project is this is the short term solution while we work towards a future of automation. This piece of work is supposed to be the stepping stone to us being able to send results automatically onto Ndelius without requiring Admin staff to mark works as in progress/done. If it feels like the outcomes hearings dashboard is a bit clunky and not smooth as it should be, ie requiring users to mark their work as ‘in progress’ and then leaving the service to progress that work.. It’s because it is. Given the time, budget and resources we have at present, we had to make a decision on how smart this piece of work would be versus how much work this would take. This is not and should not be the final iteration, this work should be evolved until we reach the final stage of automation.
+An important thing about this project is this is the short term solution while we work towards a future of automation. This piece of work is supposed to be the stepping stone to us being able to send results automatically onto Ndelius without requiring Admin staff to mark works as in progress/done. If it feels like the outcomes hearings dashboard is a bit clunky and not smooth as it should be, ie requiring users to mark their work as 'in progress' and then leaving the service to progress that work.. It's because it is. Given the time, budget and resources we have at present, we had to make a decision on how smart this piece of work would be versus how much work this would take. This is not and should not be the final iteration, this work should be evolved until we reach the final stage of automation.

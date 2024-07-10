@@ -9,7 +9,7 @@ tags: ["resulting", "workflow", "hearing notes"]
 
 Exploring some new features as they evolve Prep a Case into a full case tracking service.
 
-Seeing the progress of a case (whether this is the first hearing of the case, or it’s been returned to court several times - and the reasons why) is key to understanding where and how Probation might help a service user.
+Seeing the progress of a case (whether this is the first hearing of the case, or it's been returned to court several times - and the reasons why) is key to understanding where and how Probation might help a service user.
 
 Currently, Probation staff do this by populating their trackers, and looking at them during the life of a case when a person on probation shows up in court, or by looking at Common Platform
 
@@ -23,7 +23,7 @@ To help users understand how a case is progressing. Users can see the history of
 [Prototype second iteration](https://hmpps-prepare-a-case-prototype.apps.live.cloud-platform.service.justice.gov.uk/cases/13/summary) (Link broken.)
 
 #### Changes made
-- Added author and time stamp, different probation officers will be sitting in each hearing and it’s helpful to know who was in which hearing in case they need to follow up on any details
+- Added author and time stamp, different probation officers will be sitting in each hearing and it's helpful to know who was in which hearing in case they need to follow up on any details
 - Added an option to delete comments. Comments can only be deleted from the user interface. They will need to be kept in the backend for auditing purposes. The author can only delete their own comments. Users will only see the delete option for their own comments
 - Created a 2 column layout for the author and comment to help with readability.
 

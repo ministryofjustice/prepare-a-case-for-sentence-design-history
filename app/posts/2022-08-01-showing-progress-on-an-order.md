@@ -33,21 +33,21 @@ However, the need to gather information from multiple screens and then applying 
 ### Progress against individual requirements
 Sentences often have individual requirements attached to them, for example a person must attend a course or complete 100 hours of unpaid work. The court often wants to know how a defendant is progressing against these individual parts of their order.
 
-When we tested initial concepts of displaying progress with users, we discovered the data in NDelius around individual requirements was often inaccurate. While some requirements have their data structured and entered in a standard way, most don’t.
+When we tested initial concepts of displaying progress with users, we discovered the data in NDelius around individual requirements was often inaccurate. While some requirements have their data structured and entered in a standard way, most don't.
 
 This meant that we could not reliably show progress against individual requirements, such as courses, accredited programmes and rehabilitation activity requirements (RAR) days.
 
 ### Language of compliance
-Probation practitioners are not only concerned with whether a person attended or didn’t attend an appointment. They also want to know about ‘compliance’ - did the person on probation do what they were supposed to do as part of the appointment.
+Probation practitioners are not only concerned with whether a person attended or didn't attend an appointment. They also want to know about 'compliance' - did the person on probation do what they were supposed to do as part of the appointment.
 
-If a person attends an appointment but is disruptive or doesn’t attend without providing a reasonable excuse, then this is considered a ‘failure to comply’.
+If a person attends an appointment but is disruptive or doesn't attend without providing a reasonable excuse, then this is considered a 'failure to comply'.
 
-We believed that we needed to consolidate the language around ‘compliance’ with the concepts of ‘acceptable’ and ‘unacceptable’ appointments if we were to provide a snapshot of a person’s progress that could be quickly digested and consistently understood by users.
+We believed that we needed to consolidate the language around 'compliance' with the concepts of 'acceptable' and 'unacceptable' appointments if we were to provide a snapshot of a person's progress that could be quickly digested and consistently understood by users.
 
 ### Context hidden in the NDelius contact log
 As we moved through early concepts of displaying progress against an order, we realised that the data alone was sometimes not enough for probation practitioners to build a picture of how someone was progressing.
 
-Users told us about the additional context that could be found within the NDelius contact log. This was usually in the form of notes from the person’s probation practitioner.
+Users told us about the additional context that could be found within the NDelius contact log. This was usually in the form of notes from the person's probation practitioner.
 
 
 Some users talked about only looking at the most recent contacts as they felt this gave the most up to date information, while others were happy to look further back in time in order to get a better understanding of a person.
@@ -59,9 +59,9 @@ We therefore moved to a more top-level view using only reliable data from the NS
 
 This addressed users' concern about the accuracy and reliability of attendance data, while giving them context as to the type of appointments being attended.
 
-We removed the concept of ‘compliance’, and instead used the labels of ‘Acceptable’ and ‘Unacceptable’ which users understood when applied to both attended and unattended appointments.
+We removed the concept of 'compliance', and instead used the labels of 'Acceptable' and 'Unacceptable' which users understood when applied to both attended and unattended appointments.
 
-We also recognised that users would still require more information in some scenarios and, in the absence of reliable structured data, we opted to link users directly to a defendant’s NDelius contact log.
+We also recognised that users would still require more information in some scenarios and, in the absence of reliable structured data, we opted to link users directly to a defendant's NDelius contact log.
 
 ### Screenshots
 {% from "figure/macro.njk" import appFigure with context %}

@@ -1,7 +1,7 @@
 ---
 title: Get offender manager update
 description: When a person on probation is due to appear in court, the court will want to know how that person is currently engaging with probation.
-date: 2022-07-01
+date: 2022-08-01
 tags: ["historical case","view past"]
 ---
 

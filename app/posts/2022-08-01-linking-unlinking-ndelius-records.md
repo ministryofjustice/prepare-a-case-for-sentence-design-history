@@ -12,7 +12,7 @@ However, when we designed how automatic matching would work, we recognised that 
 
 This could be by:
 - being unable to find a record for a defendant with the data provided
-- incorrectly matching a defendant to a record that doesn’t belong to them
+- incorrectly matching a defendant to a record that doesn't belong to them
 
 In these scenarios, we needed to give users the ability to manually intervene and correct the service if a mistake was made.
 
@@ -20,18 +20,18 @@ In these scenarios, we needed to give users the ability to manually intervene an
 We believed the most likely scenario for an automatic matching error was for the service to miss a record for a defendant when one existed.
 
 This could happen for a number of reasons, such as:
-- the defendant is using an alias name or date of birth that isn’t recorded in NDelius
+- the defendant is using an alias name or date of birth that isn't recorded in NDelius
 - the police have not provided the correct details for a defendant
 
 We recognised that by giving users the ability to manually link a defendant to a probation record, we introduced the possibility of a user linking a defendant to the wrong record. This meant any journey to link a record needed a confirmatory step to minimise this risk.
 
 As a result, we created this journey for linking a record:
-1. User identifies ‘No record’ defendant as being known to probation
-2. Clicks ‘Link NDelius record’
-3. Enters the NDelius record’s case reference number (CRN) for the defendant
-4. Clicks ‘Find record’
+1. User identifies 'No record' defendant as being known to probation
+2. Clicks 'Link NDelius record'
+3. Enters the NDelius record's case reference number (CRN) for the defendant
+4. Clicks 'Find record'
 5. Reviews the details associated with the CRN and compares them to the defendant
-6. Clicks ‘Link record to defendant’
+6. Clicks 'Link record to defendant'
 7. Returned to the case summary with a success message
 
 ## Unlinking a record to a defendant
@@ -41,9 +41,9 @@ And while the confirmatory steps of manually linking a record should minimise th
 
 These were the steps we designed for a user to unlink a record:
 - User identifies defendant as being incorrectly linked to a record
-- Clicks ‘Unlink NDelius record’
+- Clicks 'Unlink NDelius record'
 - Reviews the the details associated with the CRN and compares them to the defendant
-- Clicks ‘Unlink record from defendant’
+- Clicks 'Unlink record from defendant'
 - Returned to the case summary with a success message
 
 ## Monitoring linked and unlinked records

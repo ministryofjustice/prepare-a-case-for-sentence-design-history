@@ -44,12 +44,12 @@ As a result, screens in the prototype were designed in a way that court staff wo
 
 Examples of how user research informed the design
 
-#### Court administrators need to find ‘cases of interest’ on a case list quickly
+#### Court administrators need to find 'cases of interest' on a case list quickly
 A case list needs to be easily scanned and information that would make a case relevant to probation should be clearly displayed.
 
 We supplemented the case list with information about a defendant's probation status and when they were most recently supervised by probation as research had found that a defendant who had recently completed an order would still be of interest.
 
-We also removed information from the case list that was unhelpful in triaging cases of interest such as the ‘block’ descriptors that accompany the current court listings.
+We also removed information from the case list that was unhelpful in triaging cases of interest such as the 'block' descriptors that accompany the current court listings.
 
 #### Court duty officers need to advise a court about a person known to probation
 This presented a design challenge in how we might display a large amount of information in a way that is easily consumable for a user so that they can relay it to the court.
@@ -59,7 +59,7 @@ This led to us splitting out the screens on a defendant into two views - one tha
 #### Senior probation officers need to ensure probation staff are in court rooms that are likely to require them
 We needed to consider how we might aggregate or summarise information about the number of cases of interest in court and when and where they were appearing.
 
-Although it was not something we initially planned to provide as part of the service, we designed a ‘dashboard’ style view that provided a summary of what was happening in court on a particular day.
+Although it was not something we initially planned to provide as part of the service, we designed a 'dashboard' style view that provided a summary of what was happening in court on a particular day.
 
 ## Testing the prototype
 We wanted to see if users could:

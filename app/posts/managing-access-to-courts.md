@@ -10,9 +10,9 @@ tags: ["historical case","view past"]
 
 The service would use cookies to remember which court they picked so the next time they signed in they would be taken directly to that court.
 
-They could return to the list of courts and pick a different court to view at any time via a ‘Change court’ link in the header navigation. Most users never had any need to view a court other than the one they worked in.
+They could return to the list of courts and pick a different court to view at any time via a 'Change court' link in the header navigation. Most users never had any need to view a court other than the one they worked in.
 
-However, probation practitioners and court administrators can often work across more than one magistrates’ court. Administrators may even work across multiple courts within the space of a single day.
+However, probation practitioners and court administrators can often work across more than one magistrates' court. Administrators may even work across multiple courts within the space of a single day.
 
 We recognised that as the service became available to all courts, we would need to find a way that allowed these users to easily move between the courts they worked in without having to navigate a list of 160 courts each time.
 
@@ -41,9 +41,9 @@ We worked closely with developers to design a mechanism that would allow a user 
 Working with a frontend developer, we designed an interactive prototype for first time users of the service.
 
 The prototype gave a user the ability to:
-- add the courts they worked in to a list of ‘My courts’
+- add the courts they worked in to a list of 'My courts'
 - access case lists in those courts
-- edit their ‘My courts’ list to add or remove courts
+- edit their 'My courts' list to add or remove courts
 - save their updated list
 
 ## User research

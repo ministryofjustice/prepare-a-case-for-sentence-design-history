@@ -10,9 +10,9 @@ A key task of probation staff in court is to identify people appearing in court 
 
 This is presently a manual process which requires staff to rekey information from the court listing system into the probation database. It is time consuming and open to error.
 
-Prepare a case for sentence automates this process. It does this by taking the defendant’s name, date of birth and Police National Computer (PNC) number from the court listing system and searching the probation database system for a match.
+Prepare a case for sentence automates this process. It does this by taking the defendant's name, date of birth and Police National Computer (PNC) number from the court listing system and searching the probation database system for a match.
 
-If there is a record that matches with all of these data points, it is considered an exact match and the record is attached to the defendant in the service. If the search doesn’t return any results then the defendant is displayed as not having a probation record.
+If there is a record that matches with all of these data points, it is considered an exact match and the record is attached to the defendant in the service. If the search doesn't return any results then the defendant is displayed as not having a probation record.
 
 There are also scenarios where the service will search for a defendant and return results that partially match the defendant or multiple exact matches if the defendant has had duplicate probation records created in error.
 
@@ -34,9 +34,9 @@ As the service is automating a previously manual process, we need to make clear 
 
 The first time that a user would see a defendant with a potential matching record is on the case list screen where all defendants are listed with their probation status. We therefore needed to indicate that for some defendants their probation status was unclear due to a record potentially existing for them.
 
-We tested a range of different statuses with users and asked them to explain to us what they thought it meant, why a defendant may have that status and what they may have to do as a result.  The status that tested most positively was ‘Possible record’ as users recognised that this was likely referring to a record or records that appear to match the defendant.
+We tested a range of different statuses with users and asked them to explain to us what they thought it meant, why a defendant may have that status and what they may have to do as a result.  The status that tested most positively was 'Possible record' as users recognised that this was likely referring to a record or records that appear to match the defendant.
 
-However, some users were still unclear as to which ‘record’ might be being referred to. As a result we decided to include the name of the probation database system, NDelius, as part of the status. This resolved the confusion that some users had as to what the service may have found and what they were being asked to do.
+However, some users were still unclear as to which 'record' might be being referred to. As a result we decided to include the name of the probation database system, NDelius, as part of the status. This resolved the confusion that some users had as to what the service may have found and what they were being asked to do.
 
 ### Give users enough information to make a decision confidently
 When a possible match is presented, we need to show to the user why the service has matched with that record and give them enough information to decide if a record is a match for a defendant or not.
@@ -56,12 +56,12 @@ Most users were able to do so successfully, however some struggled with the amou
 
 To help them we added a yellow highlight over the data points of the possible records that matched exactly with the defendant appearing in court. This appeared to aid understanding of the matching task and focus on the similarities and differences between multiple possible records and the defendant.
 
-### Offer routes for when the service has presented a record that doesn’t match
-We recognised that there was potential for our service to return a possible match that wasn’t the defendant. In these instances, we needed to allow the user to tell us that the record found wasn’t the defendant and that the person didn’t have a probation record.
+### Offer routes for when the service has presented a record that doesn't match
+We recognised that there was potential for our service to return a possible match that wasn't the defendant. In these instances, we needed to allow the user to tell us that the record found wasn't the defendant and that the person didn't have a probation record.
 
 Based on how the service was matching records with a high degree of accuracy, this scenario was likely to be an edge case.
 
-As a result, we put these alternative routes behind an expandable ‘details’ component. If the user could not see the correct record, they could click the component and be presented with the ability to say the defendant had no record or link them to a probation record manually using a reference number.
+As a result, we put these alternative routes behind an expandable 'details' component. If the user could not see the correct record, they could click the component and be presented with the ability to say the defendant had no record or link them to a probation record manually using a reference number.
 
 ## Minimum viable product design
 Following a number of rounds of testing and iteration, we settled on a MVP for the matching process which we were confident would:

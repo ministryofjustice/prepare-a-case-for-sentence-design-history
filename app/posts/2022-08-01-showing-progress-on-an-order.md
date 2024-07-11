@@ -49,7 +49,6 @@ As we moved through early concepts of displaying progress against an order, we r
 
 Users told us about the additional context that could be found within the NDelius contact log. This was usually in the form of notes from the person's probation practitioner.
 
-
 Some users talked about only looking at the most recent contacts as they felt this gave the most up to date information, while others were happy to look further back in time in order to get a better understanding of a person.
 
 ## Minimum viable product design

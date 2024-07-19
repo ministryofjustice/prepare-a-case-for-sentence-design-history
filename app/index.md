@@ -1,6 +1,6 @@
 ---
 layout: collection
-title: "Prepare a case for sentence design history"
+title: "Prepare a case for sentence design history-Patrick"
 description: "A record of how this service has developed over time."
 pagination:
   data: collections.all

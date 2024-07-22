@@ -6,6 +6,7 @@ tags: ["historical case","view past"]
 ---
 
 ## Background
+
 The probation in court team are exploring some new features as they evolve prepare a case for sentence into a full case tracking service.
 
 The approach at this stage is to add features to the Case Summary tab without changing the structure of the service. To create simple features that build towards case tracking, that can add incremental value to our users (particularly to those who have not yet adopted the One Note case tracker).
@@ -13,6 +14,7 @@ The approach at this stage is to add features to the Case Summary tab without ch
 As a first building block to transform our service, we are allowing users to view past cases. Following this work, we will populate past cases with up to date information.
 
 ## Aim
+
 Currently users can only see today and 6 days in the future when preparing a case. Users have told us that being able to see cases in the past would help them answer questions that can arise after a case has been heard and disappeared from our service.
 
 The case history module that we have developed alongside the case list navigation goes well together.
@@ -24,11 +26,13 @@ With this new design of the navigation, we will give users:
 - the addition of 6 days in the past, giving them a total view of 13 days cases
 
 ### Prototype first iteration
+
 [Prototype first iteration](https://www.figma.com/proto/5NQ0Exgyebm7IbGqh7wAbS/Nav%2C-Case-progress%2C-comments?page-id=1108%3A7508&node-id=1185-8943&viewport=858%2C238%2C0.07&scaling=scale-down-width&starting-point-node-id=1185%3A8943&hide-ui=1) (view yesterday's case list.)
 
 [Prototype second iteration](https://hmpps-prepare-a-case-prototype.apps.live.cloud-platform.service.justice.gov.uk/cases/day/2022-07-20/case-list) (Link broken.)
 
 ### Scrapped designs
+
 Participants have told us that they are very time-poor and that wifi is patchy. We thought that clicking through and loading a different view of the navigation would be more complex than necessary.
 
 {% from "figure/macro.njk" import appFigure with context %}
@@ -40,6 +44,7 @@ Participants have told us that they are very time-poor and that wifi is patchy. 
 }) }}
 
 ### Prototype third iteration
+
 [Prototype third iteration](https://www.figma.com/proto/5NQ0Exgyebm7IbGqh7wAbS/Nav%2C-Case-progress%2C-comments?page-id=1815%3A22083&node-id=1878-24463&viewport=1414%2C550%2C0.24&scaling=min-zoom&starting-point-node-id=1878%3A24463&show-proto-sidebar=1)
 
 ## Chosen design
@@ -57,6 +62,7 @@ When we changed to using the real days date there were no issues understanding w
 }) }}
 
 ### What's next?
+
 This featured will be added to PAC as an enhancement, we will keep track of usage through Google Tag Manager and we will be keeping an eye on:
 
 - how far in the past do users navigate

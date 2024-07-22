@@ -6,6 +6,7 @@ tags: ["historical case","view past"]
 ---
 
 ## Background
+
 When a person on probation is due to appear in court, the court will want to know how that person is currently engaging with probation.
 
 This means there is a task for probation staff in court to contact the defendant's probation practitioner in the community (also known as their offender manager) in advance of the hearing to get an update on how that person is progressing.
@@ -25,6 +26,7 @@ We identified a number of other pain points including:
 - difficulty in finding the offender manager contact information, particularly if they are in a different part of the country
 
 ## Our approach - automating the offender manager request process?
+
 We wanted to know how we could reduce the effort required in requesting an update and how we could increase response rates.
 
 We believed that by automating the process within Prepare a case for sentence, we could potentially standardise the process in court and improve the timeliness of requests.
@@ -34,6 +36,7 @@ We developed some initial concepts for how the service could display that a requ
 ### Challenges of automation
 
 #### Presenting automation to users
+
 The main design challenge was how we presented to users the automation of a process that was currently a manual one. We would have to make clear what the service has done, why it has done it and when.
 
 We would also need to consider how we surfaced updates that were received and how users accessed them, as well as what the service would do in the event of an update not being received.
@@ -45,11 +48,13 @@ We presented this to other designers across the department and asked them for fe
 The feedback suggested we could simplify some of the content around as well as making the automated elements of the process and the actions still required of users clearer.
 
 #### Identifying offender manager contacts
+
 When we first explored automation, we planned to get the offender manager's contact details from NDelius. The person's NDelius record should be kept up to date with who their offender manager is, however their contact information is not surfaced to users.
 
 This would mean working with the NDelius team to get access to that information to allow any automated email to be sent.
 
 #### Complex business rules
+
 The automation of this process would also rely on the service applying some potentially complex business rules.
 
 The service would need to recognise which types of cases required offender manager updates and consider the offence type and the defendant's plea.
@@ -57,6 +62,7 @@ The service would need to recognise which types of cases required offender manag
 We would need to monitor if this logic was working and not overwhelming offender managers with unnecessary update requests.
 
 ### Parking the work
+
 We recognised the complexity in attempting to standardise and automate this process. There were also technical and data limitations that meant the service would be unable to support an automated request at this point.
 
 We decided to park this work and focus on surfacing the offender manager's contact details within the service.

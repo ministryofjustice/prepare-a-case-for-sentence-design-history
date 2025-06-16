@@ -18,7 +18,6 @@ related:
       href: https://hmpps-prepare-a-case-prototype-main.apps.live.cloud-platform.service.justice.gov.uk/index
       description: |
         Username: `hmpps-prepare-a-case-prototype`
-***REMOVED***
         Repo: [Github](https://github.com/ministryofjustice/hmpps-prepare-a-case-prototype)
     - text: Design history repository
       href: https://github.com/ministryofjustice/prepare-a-case-for-sentence-design-history
